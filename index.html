@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Portfolio</title>
+</head>
+<body>
+      <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- HERO SECTION --> 
+     <section>
+        <h1>Hi, I'm chinmay</h1>
+        <p>I am a passionate web developer from bangalore</p>
+        <a href="#contact" class="btn">Hire me</a>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="chinmay.jpg" alt="chinmays Profile Picture" width="200" height="200">
+        <p>I love building things on the web. Currently learning HTML, CSS, 
+        JavaScript, and React.</p>
+    </section>
+    <table>
+    <thead>
+        <tr>
+            <th>Technology</th>
+            <th>Year</th>
+            <th>Created By</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HTML</td>
+            <td>1991</td>
+            <td>Tim Berners-Lee</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>1996</td>
+            <td>Håkon Wium Lie</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>1995</td>
+            <td>Brendan Eich (in 10 days!)</td>
+        </tr>
+    </tbody>
+</table>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A simple web application built with HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+                <div class="project-card">
+            <h3>Project 2</h3>
+            <p>good portfolio.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>A to-do list app built with JavaScript that saves tasks in local storage.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+    </section>
+      <!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+
+    <form action="/submit" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+            <option value="">-- Select a subject --</option>
+            <option value="Web Development">I want to hire you.</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+        <p>Email: <a href="mailto:chinmaykrishnack10@gmail.com">chinmaykrishnack10@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/chinmay-krishna-abb9043aa/" target="_blank">chinmaykrishna</a></p>
+    <p>Github: <a href="https://github.com/chinmaykrishna01" target="_blank">chinmaykrishna01</a></p>
+    </section>
+     <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Chinmay. All rights reserved.</p>
+    </footer>
+</body>
+</html>
