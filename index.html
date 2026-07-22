@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- SEO Meta Tags -->
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance work.">
     <meta name="keywords" content="chinmay, Portfolio, Web Developer, React, Node.js, JavaScript, HTML, CSS, Freelance Developer">
     <meta name="author" content="chinmay krishna">
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="My Portfolio | chinmay">
-    <meta property="og:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta property="og:description" content="Full stack developer specializing in React, Node.js, and modern web technologies.">
     <meta property="og:image" content="images/profile.jpg">
     <meta property="og:url" content="[Your Portfolio URL]">
     <meta property="og:type" content="website">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="My Portfolio | chinmay">
-    <meta name="twitter:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="twitter:description" content="Full stack developer specializing in React, Node.js, and modern web technologies.">
     <meta name="twitter:image" content="images/profile.jpg">
-
-    <title>my Portfolio</title>
-    <link rel="icon" href="favicon.png" type="image/svg+xml">
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII=">
+    <title>My Portfolio | chinmay</title>
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
-      <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -33,46 +30,48 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- HERO SECTION --> 
-     <section>
+    <!-- HERO SECTION -->
+    <header>
         <h1>Hi, I'm chinmay</h1>
         <p>I am a passionate web developer from bangalore</p>
         <a href="#contact" class="btn">Hire me</a>
-    </section>
+    </header>
+
     <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Me</h2>
         <figure>
-        <img src="chinmay.jpg" alt="chinmays Profile Picture" width="200" height="200">
-       <figcaption>I love building things on the web. Currently learning HTML, CSS, JavaScript, and React.</figcaption>
-    </figure>
+            <img src="chinmay.jpg" alt="chinmay's Profile Picture" width="200" height="200">
+            <figcaption>I love building things on the web. Currently learning <em>HTML</em>, <em>CSS</em>, <strong>JavaScript</strong>, and <strong>React</strong>.</figcaption>
+        </figure>
+        <table>
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Year</th>
+                    <th>Created By</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>1991</td>
+                    <td>Tim Berners-Lee</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>1996</td>
+                    <td>Håkon Wium Lie</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>1995</td>
+                    <td>Brendan Eich (in 10 days!)</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
-    <table>
-    <thead>
-        <tr>
-            <th>Technology</th>
-            <th>Year</th>
-            <th>Created By</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>HTML</td>
-            <td>1991</td>
-            <td>Tim Berners-Lee</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>1996</td>
-            <td>Håkon Wium Lie</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>1995</td>
-            <td>Brendan Eich (in 10 days!)</td>
-        </tr>
-    </tbody>
-</table>
+
     <!-- SKILLS SECTION -->
     <section id="skills">
         <h2>Skills</h2>
@@ -83,63 +82,57 @@
             <li>React</li>
         </ul>
     </section>
+
     <!-- PROJECTS SECTION -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>A simple web application built with HTML, CSS, and JavaScript.</p>
-              <a href="project.html" class="btn">View Project</a>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/..." title="youtube video player" frameborder="0" allowfullscreen></iframe>
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card" data-category="web" data-year="2024">
+                <img src="project1.jpg" alt="Weather App screenshot">
+                <div class="project-card-body">
+                    <h3>Weather App</h3>
+                    <p>Real-time weather dashboard using OpenWeather API</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </article>
         </div>
-            
-                <div class="project-card">
-            <h3>Project 2</h3>
-            <p>good portfolio.</p>
-            <a href="#" class="btn">View Project</a>
-        </div>
-
-        <div class="project-card">
-            <h3>Project 3</h3>
-            <p>A to-do list app built with JavaScript that saves tasks in local storage.</p>
-            <a href="#" class="btn">View Project</a>
-        </div>
-
     </section>
-      <!-- CONTACT SECTION -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
 
-    <form action="/submit" method="post">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        <br><br>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <br><br>
-
-        <label for="subject">Subject:</label>
-        <select id="subject" name="subject" required>
-            <option value="">-- Select a subject --</option>
-            <option value="Web Development">I want to hire you.</option>
-            <option value="Feedback">Feedback</option>
-            <option value="Other">Other</option>
-        </select>
-        <br><br>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <br><br>
-
-        <button type="submit">Send Message</button>
-    </form>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+        <form action="https://formsubmit.co/chinmaykrishnack10@gmail.com" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">-- Select a subject --</option>
+                <option value="Web Development">I want to hire you.</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br><br>
+            <button type="submit">Send Message</button>
+        </form>
         <p>Email: <a href="mailto:chinmaykrishnack10@gmail.com">chinmaykrishnack10@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/chinmay-krishna-abb9043aa/" target="_blank">chinmaykrishna</a></p>
-    <p>Github: <a href="https://github.com/chinmaykrishna01" target="_blank">chinmaykrishna01</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/chinmay-krishna-abb9043aa/" target="_blank">chinmaykrishna</a></p>
+        <p>Github: <a href="https://github.com/chinmaykrishna01" target="_blank">chinmaykrishna01</a></p>
     </section>
-     <!-- FOOTER -->
+
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 Chinmay. All rights reserved.</p>
     </footer>
