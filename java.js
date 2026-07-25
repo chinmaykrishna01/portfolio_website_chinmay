@@ -105,3 +105,5 @@ document.querySelectorAll('.filter-btn').forEach(btn =>{
  
 //Intial render
 renderProjects();
+ 
+ 
