@@ -20,67 +20,55 @@
     <meta name="twitter:image" content="images/profile.jpg">
     <title>My Portfolio | chinmay</title>
     <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- NAVIGATION -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">chinmay</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
 
     <!-- HERO SECTION -->
-    <header>
-        <h1>Hi, I'm chinmay</h1>
-        <p>I am a passionate web developer from bangalore</p>
-        <a href="#contact" class="btn">Hire me</a>
+    <header class="hero-section">
+        <h1>Hi, <span class="highlight">I'm chinmay</span></h1>
+        <p class="tagline">I build beautiful, fast, accessible websites.</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
     </header>
 
     <!-- ABOUT SECTION -->
-    <section id="about">
+    <section id="about" class="about-section">
         <h2>About Me</h2>
-        <figure>
-            <img src="chinmay.jpg" alt="chinmay's Profile Picture" width="200" height="200">
-            <figcaption>I love building things on the web. Currently learning <em>HTML</em>, <em>CSS</em>, <strong>JavaScript</strong>, and <strong>React</strong>.</figcaption>
-        </figure>
-        <table>
-            <thead>
-                <tr>
-                    <th>Technology</th>
-                    <th>Year</th>
-                    <th>Created By</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>1991</td>
-                    <td>Tim Berners-Lee</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>1996</td>
-                    <td>Håkon Wium Lie</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>1995</td>
-                    <td>Brendan Eich (in 10 days!)</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="about-content">
+            <figure class="profile-figure">
+                <img src="chinmay.jpg" alt="chinmay's Profile Picture">
+                <figcaption>chinmay - Web Developer</figcaption>
+            </figure>
+            <div class="about-text">
+                <p>I'm a passionate web developer who loves turning ideas into functional, polished websites. I focus on clean design, fast loading pages, and accessible experiences that feel great on every device.</p>
+            </div>
+        </div>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section id="skills">
+    <section id="skills" class="skill-section">
         <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JS</div>
+            <div class="skill-item">REACT</div>
+        </div>
     </section>
 
     <!-- PROJECTS SECTION -->
@@ -100,31 +88,61 @@
                     <a href="#" class="btn">GitHub</a>
                 </div>
             </article>
+            <article class="project-card" data-category="web" data-year="2025">
+                <img src="project2.jpg" alt="Portfolio website screenshot">
+                <div class="project-card-body">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive personal site built with HTML, CSS, and JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </article>
+            <article class="project-card" data-category="ui" data-year="2026">
+                <img src="project3.jpg" alt="Dashboard UI screenshot">
+                <div class="project-card-body">
+                    <h3>Dashboard UI</h3>
+                    <p>A polished admin dashboard experience focused on usability.</p>
+                    <div class="project-tags">
+                        <span class="tag">UI</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                </div>
+            </article>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
         <p>Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
         <form action="https://formsubmit.co/chinmaykrishnack10@gmail.com" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            <br><br>
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <br><br>
-            <label for="subject">Subject:</label>
-            <select id="subject" name="subject" required>
-                <option value="">-- Select a subject --</option>
-                <option value="Web Development">I want to hire you.</option>
-                <option value="Feedback">Feedback</option>
-                <option value="Other">Other</option>
-            </select>
-            <br><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <br><br>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">-- Select a subject --</option>
+                    <option value="Web Development">I want to hire you.</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
             <button type="submit">Send Message</button>
         </form>
         <p>Email: <a href="mailto:chinmaykrishnack10@gmail.com">chinmaykrishnack10@gmail.com</a></p>
